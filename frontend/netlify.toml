@@ -1,6 +1,7 @@
+# netlify.toml
 [build]
   base = "frontend"
-  command = "npm run build"
+  command = "NODE_OPTIONS=--openssl-legacy-provider npm run build"
   publish = "frontend/build"
 
 [build.environment]
